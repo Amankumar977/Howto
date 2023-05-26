@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Nav bar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #Aboutus{
+            width: 99%;
+            height: 500px;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: aquamarine;
+           
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding:15px 10px;
+            color:white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: justify;
+            padding: 50px 100px;
+        }
+        .sticky{
+            position: fixed;
+            top:0 ;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="/js2/image/khadeeja-yasser-3U9L9Chc3is-unsplash.jpg" alt=""  id="logo">
+        <nav id="menu-bar" > 
+            <li>Home</li>
+            <li>About us</li>
+            <li>Our team</li>
+            <li>Client</li>
+            <li>Contact us</li>
+        </nav>
+    </div>
+    <div id="container">
+        <h1>About us</h1>
+        <img src="/js1/photos/andy-quezada-tQUxB-cCw8g-unsplash.jpg" alt="" id="Aboutus">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt modi in quas facere non quisquam minima. Nesciunt at, labore eligendi ullam quos nobis veniam culpa eos voluptates. Nobis nesciunt delectus iusto quisquam cum similique, voluptas ea dolor aut, quasi debitis explicabo deserunt voluptatibus, facilis itaque nulla dolorem. Error deleniti repellendus ducimus nam, aliquam eos quae explicabo fugiat odio quo nesciunt cumque consequatur voluptas dicta quasi quisquam laudantium animi culpa labore! Cum impedit iure voluptates eveniet, nihil consectetur, possimus sit minima eligendi quos velit nam beatae exercitationem quo hic voluptas deserunt aliquam quidem, in temporibus recusandae saepe! Dolorem minus quisquam ad saepe at porro cumque ea quidem nam deleniti assumenda perspiciatis expedita, culpa sint facere alias necessitatibus laudantium hic vitae, tempore a? Nam vel nemo dolorum minus tenetur corrupti dignissimos autem quae, obcaecati maxime fuga in ex, ipsum delectus deleniti nulla provident culpa voluptates animi debitis. Sint iusto nobis ut eaque debitis, consequatur nam quisquam, consequuntur quasi voluptatem quam harum esse dolores, laboriosam animi. Reprehenderit nostrum recusandae obcaecati maxime dolore suscipit, dolor, dolorem minima soluta asperiores cumque nobis animi omnis perspiciatis. Possimus non quidem tempore maiores repudiandae debitis, delectus neque inventore, dolorum obcaecati rerum quo sed a voluptatibus adipisci vitae laudantium pariatur veniam libero itaque, facilis harum nesciunt tenetur saepe. Temporibus eaque, maxime hic doloribus perspiciatis, voluptate nam expedita voluptates, similique nihil cum omnis. Asperiores quas omnis voluptatem nostrum harum culpa obcaecati, est rerum voluptatum pariatur ipsum iste eligendi earum magni perferendis, blanditiis sapiente esse animi! Vel inventore dolorem, quasi voluptas sed dolores explicabo dicta libero, aliquid, cum ut totam quae non expedita pariatur! Explicabo omnis quibusdam ipsam! Delectus alias quis architecto dolorum consectetur eius id minima maiores error, quibusdam quasi asperiores eos ex ratione est ut pariatur optio? Voluptatibus ut explicabo esse modi iure a odit libero voluptates maiores doloremque natus earum accusamus magni nulla velit nobis tempora qui exercitationem, iste dolor excepturi inventore veniam nam aperiam? Eos repudiandae voluptate expedita doloremque veniam, eveniet explicabo praesentium, deserunt vero minus veritatis temporibus maiores ea. Tempora quibusdam perferendis quisquam quia expedita, aperiam distinctio assumenda accusamus qui? Porro libero eaque rem, maxime hic rerum dicta voluptate natus, asperiores vitae ducimus vero unde, quam expedita atque maiores soluta nemo magni deleniti repellendus. Dignissimos ipsam obcaecati soluta vitae repudiandae ut beatae! Aliquid itaque eos repudiandae a similique repellat, deleniti reiciendis soluta. Sunt officiis consequatur nobis maxime alias perspiciatis omnis, porro sit tenetur modi rem expedita qui, fugit soluta voluptates vitae sequi obcaecati fugiat dignissimos, veniam ea? Voluptas, ullam nostrum! Repellat voluptas corporis nihil incidunt error illum sint delectus sit rem dolores voluptatem ipsa culpa earum unde magnam fugit pariatur quas vel exercitationem, maxime sapiente minus? Accusamus reiciendis ab vitae consectetur incidunt voluptatum saepe expedita magni reprehenderit. Culpa, rerum praesentium magnam beatae hic asperiores ipsum quaerat provident consequuntur incidunt blanditiis accusamus amet doloremque quos sint totam suscipit aliquam repudiandae maiores odit? Eaque ab delectus aperiam laboriosam architecto? Quod saepe dignissimos voluptatem. Quas nostrum sit sunt perspiciatis expedita velit autem! Quam incidunt vitae velit qui adipisci.
+        </p>
+    </div>
+    <script>
+       window.addEventListener('scroll', function(){
+        let navBar= document.getElementById("menu-bar");
+        if(window.pageYOffset >=333){
+            navBar.classList.add('sticky');
+        }else{
+            navBar.classList.remove('sticky')
+        }
+       })
+    </script>
+</body>
+</html>
